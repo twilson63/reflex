@@ -17,9 +17,10 @@ const render = function (emitter) {
   }
 }
 
+// transform uses mostjs streams for async
 const transform = function (event) {
   var state = {}
-  return state 
+  return most.of(state )
 }
 
 app(render, transform)

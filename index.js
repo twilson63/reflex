@@ -18,7 +18,7 @@ module.exports = function (render, transform) {
 
   // window -> events
   domEvents(emitter, {route: '/'})
-    .map(transform)
+    .chain(transform)
     .observe(update(render(emitter)))
 
 }
